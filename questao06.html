@@ -16,15 +16,63 @@
         <p><a href="index.html">Voltar ao Índice</a></p>
         <h1 class="display-2">Questão 06</h1>
         <p class="lead">
-            Usando exclusivamente classes do Bootstrap 5, crie um contêiner responsivo contendo um carrossel de slides com 3 slides, barras indicadoras dos slides e setas para avançar e retroceder os slides. Cada slide deve ter um título com 5 palavras e um texto com 20 palavras. Para as imagens dos slides use "https://picsum.photos/1280/420?random=N", onde N deve ser substituído pelo número do slide.
+            Usando exclusivamente classes do Bootstrap 5, crie um contêiner responsivo contendo um carrossel de slides
+            com 3 slides, barras indicadoras dos slides e setas para avançar e retroceder os slides. Cada slide deve ter
+            um título com 5 palavras e um texto com 20 palavras. Para as imagens dos slides use
+            "https://picsum.photos/1280/420?random=N", onde N deve ser substituído pelo número do slide.
         </p>
         <hr>
     </div>
     <!-- Valor: 1.5 pontos -->
     <!-- FAZER AQUI -->
-    <div class="container">
+    <div class="container p-3">
 
+        <div class="carousel slide" data-bs-ride="carousel" id="#ads">
+
+            <div class="carousel-indicators">
+                <button class="active" data-target="#ads" data-slide-to="0"></button>
+                <button data-target="#ads" data-slide-to="1"></button>
+                <button data-target="#ads" data-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active " data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://picsum.photos/1280/420?random=1" alt="Primeiro Slide">
+                    <div class="carousel-caption">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores nesciunt dicta
+                            impedit dolorum beatae magnam dolor eaque? Quam, itaque?f</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img class="d-block w-100" src="https://picsum.photos/1280/420?random=2" alt="Segundo Slide">
+                    <div class="carousel-caption">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores nesciunt dicta
+                            impedit dolorum beatae magnam dolor eaque? Quam, itaque?f</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item"  data-bs-interval="2000">
+                    <img class="d-block w-100" src="https://picsum.photos/1280/420?random=3" alt="terceiro Slide">
+                    <div class="carousel-caption">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores nesciunt dicta
+                            impedit dolorum beatae magnam dolor eaque? Quam, itaque?f</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#ads" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" data-bs-target="#ads" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
     </div>
+
 </body>
 
 </html>
