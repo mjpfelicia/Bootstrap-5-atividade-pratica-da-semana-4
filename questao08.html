@@ -16,18 +16,113 @@
         <p><a href="index.html">Voltar ao Índice</a></p>
         <h1 class="display-2">Questão 08</h1>
         <p class="lead">
-            Usando exclusivamente classes do Bootstrap 5, crie um painel deslizante oculto usando o componente <i>OffCanvas</i>, que tenha como título "Seleções da Copa do Mundo 2022" e que tenha um botão para fechar o painel. O corpo do painel deve conter os nomes de 8 países cujas seleções estão na Copa, precedidos pela bandeira do país. Ordene os países conforme a classificação que você acha que eles obterão na copa. Em seguida, adicione uma barra de navegação com um botão alinhado à direita, intitulado "Mostrar", que, quando clicado, deve exibir o painel deslizante.
+            Usando exclusivamente classes do Bootstrap 5, crie um painel deslizante oculto usando o componente
+            <i>OffCanvas</i>, que tenha como título "Seleções da Copa do Mundo 2022" e que tenha um botão para fechar o
+            painel. O corpo do painel deve conter os nomes de 8 países cujas seleções estão na Copa, precedidos pela
+            bandeira do país. Ordene os países conforme a classificação que você acha que eles obterão na copa. Em
+            seguida, adicione uma barra de navegação com um botão alinhado à direita, intitulado "Mostrar", que, quando
+            clicado, deve exibir o painel deslizante.
         </p>
         <p class="lead">
-            Dica: use um parágrafo da classe <i>lead</i> para cada país e, na imagem da bandeira, use largura de 54px e a classe "img-thumbnail".
+            Dica: use um parágrafo da classe <i>lead</i> para cada país e, na imagem da bandeira, use largura de 54px e
+            a classe "img-thumbnail".
         </p>
         <p class="lead">
-            <a href="https://brasilescola.uol.com.br/educacao-fisica/paises-participantes-da-copa-do-mundo-de-2022.htm" target="_blank">Clique aqui</a> para obter as imagens das bandeiras dos países que estão na Copa 2022.
+            <a href="https://brasilescola.uol.com.br/educacao-fisica/paises-participantes-da-copa-do-mundo-de-2022.htm"
+                target="_blank">Clique aqui</a> para obter as imagens das bandeiras dos países que estão na Copa 2022.
         </p>
         <hr>
     </div>
     <!-- Valor: 1.5 pontos -->
     <!-- FAZER AQUI -->
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar">Mostrar
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar">
+
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Seleções da Copa do Mundo 2022</h5>
+                    <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav pe-3">
+                        <li class="nav-item d-flex mb-3">
+                            <a class="nav-link" href="#">
+                                <img src="../Bootstrap-5-atividade-pratica-da-semana-4/assets/img/bandeira-coreia-do-sul.jpg"
+                                    alt="coreia" class="img-thumbnail" style="width: 54px;">
+                            </a>
+                            <p class="lead">Coreia do Sul</p>
+                            </p>
+                        </li>
+                        <li class="nav-item d-flex mb-3">
+                            <a class="nav-link" href="#">
+                                <img src="../Bootstrap-5-atividade-pratica-da-semana-4/assets/img/brasil.jpg"
+                                    alt="Brasil" class="img-thumbnail" style="width: 54px;">
+                            </a>
+                            <p class="lead">Brasil
+                        </li>
+                        </li>
+                        <li class="nav-item d-flex mb-3">
+                            <a class="nav-link" href="#">
+                                <img src="../Bootstrap-5-atividade-pratica-da-semana-4/assets/img/croacia.jpg"
+                                    alt="Croácia" class="img-thumbnail" style="width: 54px;">
+                            </a>
+                            <p class="lead">Croácia</p>
+                        </li>
+                        <li class="nav-item d-flex mb-3">
+                            <a class="nav-link" href="#">
+                                <img src="../Bootstrap-5-atividade-pratica-da-semana-4/assets/img/japao.jpg"
+                                    alt="Japão" class="img-thumbnail" style="width: 54px;">
+                            </a>
+                            <p class="lead">Japão
+                               </p>
+                        </li>
+                        <li class="nav-item d-flex mb-3">
+                            <a class="nav-link" href="#">
+                                <img src="../Bootstrap-5-atividade-pratica-da-semana-4/assets/img/marrocos.jpg"
+                                    alt="Marrocos"
+                                   class="img-thumbnail" style="width: 54px;">
+                            </a>
+                            <p class="lead">Marrocos</p>
+                        </li>
+                        <li class="nav-item d-flex mb-3">
+                            <a class="nav-link" href="#">
+                                <img src="../Bootstrap-5-atividade-pratica-da-semana-4/assets/img/uruguai.jpg"
+                                    alt="Uruguai" class="img-thumbnail" style="width: 54px;">
+                            </a>
+                            <p class="lead">Uruguai</p>
+                        </li>
+                        <li class="nav-item d-flex mb-3">
+                            <a class="nav-link" href="#">
+                                <img src="../Bootstrap-5-atividade-pratica-da-semana-4/assets/img/equador.webp"
+                                    alt="equador" class="img-thumbnail" style="width: 54px;">
+                            </a>
+                            <p class="lead">Equador</p>
+                        </li>
+                        <li class="nav-item d-flex mb-3">
+                            <a class="nav-link" href="#">
+                                <img src="../Bootstrap-5-atividade-pratica-da-semana-4/assets/img/senegal.webp"
+                                    alt="senegal" class="img-thumbnail" style="width: 54px;">
+                            </a>
+                            <p class="lead">Senegal</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
 
 </body>
 
